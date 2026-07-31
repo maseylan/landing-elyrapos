@@ -60,8 +60,8 @@ export default function PageTransition() {
       style={{ transitionDuration: `${fading ? FADE_OUT_MS : FADE_IN_MS}ms` }}
     >
       <Image src="/logo.webp" alt="" width={180} height={48} priority />
-      <span className="mt-6 h-1 w-24 animate-pulse overflow-hidden rounded-full bg-mint-soft">
-        <span className="block h-full w-1/2 animate-pulse rounded-full bg-mint" />
+      <span className="mt-6 h-1 w-24 overflow-hidden rounded-full bg-mint-soft">
+        <span className="loading-bar-fill" />
       </span>
     </div>
   );

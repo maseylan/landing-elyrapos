@@ -41,3 +41,21 @@ section[id],
 .animate-fade-up {
   animation: fadeUp 0.6s ease-out both;
 }
+
+@keyframes loading-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+
+.loading-bar-fill {
+  display: block;
+  width: 40%;
+  height: 100%;
+  border-radius: 9999px;
+  background: var(--color-mint);
+  animation: loading-slide 0.9s ease-in-out infinite;
+}
