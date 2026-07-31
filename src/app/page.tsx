@@ -27,7 +27,7 @@ export default function Home() {
         <section className="py-16 text-center lg:py-24">
           <div className="mx-auto h-1 w-16 rounded-full bg-mint" />
           <h2 className="mt-5 text-2xl font-extrabold sm:text-3xl lg:text-4xl">
-            Lebih dari 45 Ribu Pebisnis Memakai Elyra POS
+            Lebih dari Ratusan Pebisnis Memakai Elyra POS
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted">
             Puluhan ribu pelaku usaha menjalankan transaksi hariannya dengan Elyra POS agar operasionalnya selalu tertata.

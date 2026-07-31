@@ -160,7 +160,7 @@ export const MERCHANTS = [
 export const STATS = [
   { value: "1+", label: "Tahun" },
   { value: "10+", label: "Area" },
-  { value: "1K+", label: "Pebisnis" },
+  { value: "100+", label: "Pebisnis" },
   { value: "1Jt+", label: "Total Transaksi" },
 ];
 
