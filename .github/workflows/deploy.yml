@@ -49,6 +49,8 @@ jobs:
           script: |
             cd /srv/POS/Landingpageelyrapos
             npm ci --omit=dev --no-audit --no-fund
-            pm2 restart landing-page || pm2 start "npm run start -- -p 3001" --name landing-page
+            pm2 delete landing-page 2>/dev/null || true
+            pm2 start "npm run start -- -p 3001" --name landing-page
             pm2 save
+            for i in 1 2 3 4 5; do curl -sf -o /dev/null http://127.0.0.1:3001 && break; sleep 2; done
             curl -sf -o /dev/null http://127.0.0.1:3001 && echo "LANDING_OK"
