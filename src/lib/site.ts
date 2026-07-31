@@ -5,7 +5,7 @@ export const SITE = {
   appUrl: "https://elyrapos.my.id",
   registerUrl: "https://elyrapos.my.id/register",
   // TODO: ganti dengan nomor WhatsApp asli (format internasional tanpa +)
-  whatsapp: "6281500000000",
+  whatsapp: "6285163675175",
   whatsappText: "Halo! Saya ingin mengetahui Elyra POS lebih lanjut.",
 };
 
@@ -158,10 +158,10 @@ export const MERCHANTS = [
 ];
 
 export const STATS = [
-  { value: "10+", label: "Tahun" },
-  { value: "200+", label: "Area" },
-  { value: "45K+", label: "Pebisnis" },
-  { value: "21.6T+", label: "Total Transaksi" },
+  { value: "1+", label: "Tahun" },
+  { value: "10+", label: "Area" },
+  { value: "1K+", label: "Pebisnis" },
+  { value: "1Jt+", label: "Total Transaksi" },
 ];
 
 export const TESTIMONIALS = [
