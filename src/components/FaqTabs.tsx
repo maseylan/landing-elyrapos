@@ -1,15 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FAQ_TABS } from "@/lib/site";
 
 export default function FaqTabs() {
-  const [active, setActive] = useState(FAQ_TABS[0].id);
-
-  useEffect(() => {
+  // ponytail: lazy init from URL hash instead of setState-in-effect;
+  // acceptable hydration swap on deep-link with hash
+  const [active, setActive] = useState(() => {
+    if (typeof window === "undefined") return FAQ_TABS[0].id;
     const h = window.location.hash.replace("#", "");
-    if (FAQ_TABS.some((t) => t.id === h)) setActive(h);
-  }, []);
+    return FAQ_TABS.some((t) => t.id === h) ? h : FAQ_TABS[0].id;
+  });
 
   const tab = FAQ_TABS.find((t) => t.id === active)!;
 
