@@ -17,11 +17,6 @@ export default function PricingPage() {
       <Navbar />
       <main>
         <PricingHero />
-        <section className="pt-20 lg:pt-24">
-          <h1 className="text-center text-2xl font-extrabold sm:text-3xl lg:text-4xl">
-            Pilih Paket Sesuai Kebutuhan Usaha Anda
-          </h1>
-        </section>
         <PricingFeatures />
       </main>
       <Footer />

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import PlanCard from "@/components/PlanCard";
 import { PRICING_FEATURES, PRICING_PLANS, PRICING_PER } from "@/lib/site";
 
 function Cell({ value, popular }: { value: string; popular: boolean }) {
@@ -37,15 +36,9 @@ export default function PricingFeatures() {
   return (
     <section className="py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 lg:px-6">
-        <h2 className="text-center text-2xl font-extrabold sm:text-3xl lg:text-4xl">Fitur</h2>
+        <h2 className="text-center text-2xl font-extrabold sm:text-3xl lg:text-4xl">Perbandingan Fitur Paket</h2>
 
-        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
-          {PRICING_PLANS.map((plan) => (
-            <PlanCard key={plan.name} plan={plan} />
-          ))}
-        </div>
-
-        <div className="mt-16 hidden overflow-hidden rounded-2xl border border-line lg:block">
+        <div className="mt-10 hidden overflow-hidden rounded-2xl border border-line lg:block">
           <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr]">
             <div />
             {PRICING_PLANS.map((plan) => (
@@ -68,12 +61,12 @@ export default function PricingFeatures() {
 
             {PRICING_FEATURES.map((group) => (
               <div key={group.title} className="col-span-4 grid grid-cols-[1.5fr_1fr_1fr_1fr]">
-                <p className="col-span-4 border-t border-line bg-mint-soft/40 px-4 py-3 font-bold text-brand">
+                <div className="col-span-4 border-t border-b border-line bg-mint-soft px-5 py-3.5 font-extrabold text-sm uppercase tracking-wider text-brand">
                   {group.title}
-                </p>
+                </div>
                 {group.rows.map((row) => (
-                  <div key={row.name} className="col-span-4 grid grid-cols-[1.5fr_1fr_1fr_1fr] border-t border-line">
-                    <p className="flex items-center px-4 py-3 text-sm font-semibold text-ink">{row.name}</p>
+                  <div key={row.name} className="col-span-4 grid grid-cols-[1.5fr_1fr_1fr_1fr] border-b border-line/60">
+                    <p className="flex items-center px-5 py-3.5 text-sm font-semibold text-ink">{row.name}</p>
                     {row.values.map((v, i) => (
                       <Cell key={i} value={v} popular={i === 1} />
                     ))}
@@ -99,23 +92,32 @@ export default function PricingFeatures() {
                     <span className="text-sm font-bold text-brand">{plan.price}</span>
                   </span>
                   <span className="flex items-center gap-3">
-                    {plan.popular && <span className="rounded-full bg-mint px-3 py-1 text-xs font-bold text-ink">Popular</span>}
+                    {plan.popular && <span className="rounded-full bg-brand/10 px-3 py-1 text-xs font-bold text-brand">Popular</span>}
                     <svg className={`h-4 w-4 text-muted transition-transform ${isOpen ? "rotate-180" : ""}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
                       <path d="m6 9 6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </span>
                 </button>
                 {isOpen && (
-                  <ul className="border-t border-line">
-                    {PRICING_FEATURES.flatMap((g) => g.rows).map((row) => (
-                      <li key={row.name} className="flex items-center justify-between gap-3 px-5 py-3">
-                        <span className="text-sm text-ink">{row.name}</span>
-                        <span className="shrink-0">
-                          <Cell value={row.values[i]} popular={false} />
-                        </span>
-                      </li>
+                  <div className="border-t border-line">
+                    {PRICING_FEATURES.map((group) => (
+                      <div key={group.title}>
+                        <div className="bg-mint-soft px-5 py-2.5 text-xs font-extrabold uppercase tracking-wider text-brand border-b border-line">
+                          {group.title}
+                        </div>
+                        <ul className="divide-y divide-line/60">
+                          {group.rows.map((row) => (
+                            <li key={row.name} className="flex items-center justify-between gap-3 px-5 py-3">
+                              <span className="text-sm font-medium text-ink">{row.name}</span>
+                              <span className="shrink-0">
+                                <Cell value={row.values[i]} popular={false} />
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 )}
               </div>
             );

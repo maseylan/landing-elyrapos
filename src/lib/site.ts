@@ -72,7 +72,7 @@ export const HERO_SLIDES = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1920&q=80",
+      "https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=1920&q=80",
     title: "Aplikasi Kasir yang Menyesuaikan Cara Kerja Bisnis Anda",
     subtitle:
       "Satu sistem yang fleksibel untuk berbagai jenis usaha. Atur sesuai kebutuhan, tanpa repot.",
@@ -97,7 +97,7 @@ export const FEATURES = [
     title: "Pusatkan pencatatan transaksi Anda dengan Aplikasi Kasir Elyra",
     body: "Setiap transaksi menyimpan informasi berharga — dari produk favorit hingga jam sibuk. Elyra POS merangkumnya menjadi data siap pakai untuk menjual lebih banyak.",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1280&q=80",
+      "https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=1280&q=80",
     link: { label: "Pelajari", href: "#" },
   },
   {
@@ -157,39 +157,6 @@ export const MERCHANTS = [
   },
 ];
 
-export const STATS = [
-  { value: "1+", label: "Tahun" },
-  { value: "10+", label: "Area" },
-  { value: "100+", label: "Pebisnis" },
-  { value: "1Jt+", label: "Total Transaksi" },
-];
-
-export const TESTIMONIALS = [
-  {
-    name: "Rizky Pratama",
-    role: "Owner of Warung Kopi Senja",
-    quote:
-      "Kami memakai Elyra POS untuk 3 outlet sekaligus dan semuanya berjalan mulus. Dashboard real-time membuat saya bisa memantau penjualan dari mana pun saya berada.",
-    photo:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Dewi Lestari",
-    role: "Owner of Bakery Lestari",
-    quote:
-      "Laporan stok yang rapi memberi tahu kapan barang harus diisi ulang dan jam berapa toko paling ramai. Operasional jauh lebih teratur dari sebelumnya.",
-    photo:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Andi Wijaya",
-    role: "Owner of Newsroom Café",
-    quote:
-      "Antrean pelanggan lebih cepat, laporan lengkap, dan saya hafal pelanggan yang datang rutin. Fitur loyalty-nya benar-benar terasa bedanya.",
-    photo:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
-  },
-];
 
 export const FAQ_ITEMS = [
   {
@@ -293,7 +260,7 @@ export const PRICING_PLANS = [
     cta: { label: "Hubungi Kami", href: WA_DEMO_HREF },
   },
 ];
-export const PRICING_PER = "Per outlet/bulan";
+export const PRICING_PER = "Per Bulan";
 
 // nilai sel: "check" | "x" | teks bebas
 export const PRICING_FEATURES = [
@@ -687,7 +654,7 @@ export const BUSINESS_PAGES: BusinessPage[] = [
         title: "Pantau data penjualan real-time dari mana saja",
         body: "Rekap penjualan, pendapatan bersih, dan metode pembayaran bisa diintip dari perangkat pribadi Anda kapan saja.",
         image:
-          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1280&q=80",
         link: { label: "Pelajari", href: "/faq#laporan" },
       },
       {
@@ -713,19 +680,19 @@ export const BUSINESS_PAGES: BusinessPage[] = [
       {
         title: "Menata Denah Meja Agar Restoran Lebih Efisien",
         image:
-          "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1280&q=80",
         href: "#",
       },
       {
         title: "5 Kiat Menjaga Pelayanan Saat Restoran Penuh",
         image:
-          "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1280&q=80",
         href: "#",
       },
       {
         title: "Panduan Mengatur Shift Karyawan Restoran",
         image:
-          "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1280&q=80",
         href: "#",
       },
     ],
@@ -775,7 +742,7 @@ export const BUSINESS_PAGES: BusinessPage[] = [
         title: "Pesanan toko dan online tetap satu alur",
         body: "Pesanan dari toko, takeaway, maupun online tiba di alur kasir yang sama dan tercatat otomatis.",
         image:
-          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=1280&q=80",
       },
       {
         title: "Harga grosir dan eceran bisa diatur sekaligus",
@@ -802,19 +769,19 @@ export const BUSINESS_PAGES: BusinessPage[] = [
       {
         title: "Tips Menertibkan Stok Toko",
         image:
-          "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1280&q=80",
         href: "#",
       },
       {
         title: "Menyusun Harga Grosir dan Eceran",
         image:
-          "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?auto=format&fit=crop&w=1280&q=80",
         href: "#",
       },
       {
         title: "Membaca Pelanggan dari Laporan Penjualan",
         image:
-          "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&w=1280&q=80",
+          "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1280&q=80",
         href: "#",
       },
     ],

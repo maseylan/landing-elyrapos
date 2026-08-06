@@ -4,7 +4,6 @@ import { SITE, type BusinessPage as BusinessPageData } from "@/lib/site";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
-import TestimonialSlider from "@/components/TestimonialSlider";
 import SEOArticle from "@/components/SEOArticle";
 
 const demoHref = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(SITE.whatsappText)}`;
@@ -121,13 +120,6 @@ export default function BusinessPage({ page }: { page: BusinessPageData }) {
             <ArticleCards page={page} />
           </section>
         )}
-
-        <section className="pb-16 lg:pb-24">
-          <MainTitle text="Sudah Dipercaya Ribuan Bisnis di Indonesia" />
-          <div className="mt-10">
-            <TestimonialSlider />
-          </div>
-        </section>
 
         <SEOArticle article={page.article} />
       </main>

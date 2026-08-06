@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import FaqHero from "@/components/FaqHero";
 import FaqTabs from "@/components/FaqTabs";
-import TestimonialSlider from "@/components/TestimonialSlider";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import { SITE } from "@/lib/site";
@@ -39,8 +38,6 @@ export default function FaqPage() {
             </a>
           </div>
         </section>
-
-        <TestimonialSlider />
       </main>
       <Footer />
       <FloatingContact />
