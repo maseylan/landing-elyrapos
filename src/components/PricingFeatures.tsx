@@ -39,7 +39,7 @@ export default function PricingFeatures() {
         <h2 className="text-center text-2xl font-extrabold sm:text-3xl lg:text-4xl">Perbandingan Fitur Paket</h2>
 
         <div className="mt-10 hidden overflow-hidden rounded-2xl border border-line lg:block">
-          <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr]">
+          <div className="grid grid-cols-[1.5fr_1fr_1fr]">
             <div />
             {PRICING_PLANS.map((plan) => (
               <div key={plan.name} className={`px-4 py-6 text-center ${plan.popular ? "bg-mint-soft/60" : ""}`}>
@@ -60,15 +60,15 @@ export default function PricingFeatures() {
             ))}
 
             {PRICING_FEATURES.map((group) => (
-              <div key={group.title} className="col-span-4 grid grid-cols-[1.5fr_1fr_1fr_1fr]">
-                <div className="col-span-4 border-t border-b border-line bg-mint-soft px-5 py-3.5 font-extrabold text-sm uppercase tracking-wider text-brand">
+              <div key={group.title} className="col-span-3 grid grid-cols-[1.5fr_1fr_1fr]">
+                <div className="col-span-3 border-t border-b border-line bg-mint-soft px-5 py-3.5 font-extrabold text-sm uppercase tracking-wider text-brand">
                   {group.title}
                 </div>
                 {group.rows.map((row) => (
-                  <div key={row.name} className="col-span-4 grid grid-cols-[1.5fr_1fr_1fr_1fr] border-b border-line/60">
+                  <div key={row.name} className="col-span-3 grid grid-cols-[1.5fr_1fr_1fr] border-b border-line/60">
                     <p className="flex items-center px-5 py-3.5 text-sm font-semibold text-ink">{row.name}</p>
                     {row.values.map((v, i) => (
-                      <Cell key={i} value={v} popular={i === 1} />
+                      <Cell key={i} value={v} popular={i === 0} />
                     ))}
                   </div>
                 ))}

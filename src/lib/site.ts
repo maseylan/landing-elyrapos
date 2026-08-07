@@ -242,15 +242,8 @@ export const PRICING_PLANS = [
     name: "Free",
     price: "Gratis",
     desc: "Untuk operasional bisnis yang baru bertumbuh",
-    popular: false,
-    cta: { label: "Coba Gratis", href: SITE.appUrl },
-  },
-  {
-    name: "Pro",
-    price: "Rp499.000",
-    desc: "Fitur lengkap untuk bisnis yang ingin lebih efisien",
     popular: true,
-    cta: { label: "Jadwalkan Demo", href: WA_DEMO_HREF },
+    cta: { label: "Coba Gratis", href: SITE.appUrl },
   },
   {
     name: "Enterprise",
@@ -267,47 +260,47 @@ export const PRICING_FEATURES = [
   {
     title: "POS Dasar",
     rows: [
-      { name: "Aplikasi Kasir (POS)", values: ["check", "check", "check"] },
-      { name: "Laporan & Dashboard Real-Time", values: ["check", "check", "check"] },
-      { name: "Manajemen Stok", values: ["check", "check", "check"] },
-      { name: "Promo & Diskon", values: ["check", "check", "check"] },
+      { name: "Aplikasi Kasir (POS)", values: ["check", "check"] },
+      { name: "Laporan & Dashboard Real-Time", values: ["check", "check"] },
+      { name: "Manajemen Stok", values: ["check", "check"] },
+      { name: "Promo & Diskon", values: ["check", "check"] },
       {
         name: "Manajemen Karyawan",
-        values: ["Unlimited", "Unlimited", "Unlimited"],
+        values: ["Unlimited", "Unlimited"],
       },
     ],
   },
   {
     title: "Penerimaan Pembayaran",
-    rows: [{ name: "E-Wallet & QRIS", values: ["check", "check", "check"] }],
+    rows: [{ name: "E-Wallet & QRIS", values: ["check", "check"] }],
   },
   {
     title: "Operasional Toko Lanjutan",
     rows: [
-      { name: "Manajemen Meja & Denah", values: ["check", "check", "check"] },
-      { name: "Manajemen Bahan Baku", values: ["check", "check", "check"] },
-      { name: "Inventori Lanjutan", values: ["check", "check", "check"] },
+      { name: "Manajemen Meja & Denah", values: ["check", "check"] },
+      { name: "Manajemen Bahan Baku", values: ["check", "check"] },
+      { name: "Inventori Lanjutan", values: ["check", "check"] },
     ],
   },
   {
     title: "Manajemen Hubungan Pelanggan",
     rows: [
-      { name: "Struk Email", values: ["x", "check", "check"] },
-      { name: "Struk SMS", values: ["x", "check", "check"] },
+      { name: "Struk Email", values: ["x", "check"] },
+      { name: "Struk SMS", values: ["x", "check"] },
       {
         name: "Database Pelanggan",
-        values: ["Unlimited", "Unlimited", "Unlimited"],
+        values: ["Unlimited", "Unlimited"],
       },
-      { name: "Program Loyalty", values: ["check", "check", "check"] },
+      { name: "Program Loyalty", values: ["check", "check"] },
     ],
   },
   {
     title: "Dukungan",
     rows: [
-      { name: "Edukasi & Pelatihan Online", values: ["x", "check", "check"] },
-      { name: "Setup & Pelatihan Offline", values: ["x", "check", "check"] },
-      { name: "Call Centre", values: ["x", "check", "check"] },
-      { name: "Live Chat & WhatsApp", values: ["check", "check", "check"] },
+      { name: "Edukasi & Pelatihan Online", values: ["x", "check"] },
+      { name: "Setup & Pelatihan Offline", values: ["x", "check"] },
+      { name: "Call Centre", values: ["x", "check"] },
+      { name: "Live Chat & WhatsApp", values: ["check", "check"] },
     ],
   },
 ];

@@ -8,7 +8,7 @@ import FloatingContact from "@/components/FloatingContact";
 export const metadata: Metadata = {
   title: "Harga - Elyra POS",
   description:
-    "Pilihan paket langganan Elyra POS: Basic, Pro, dan Enterprise. Tanpa biaya tersembunyi. Bandingkan fitur setiap paket dan jadwalkan demo.",
+    "Pilihan paket langganan Elyra POS: Free dan Enterprise. Tanpa biaya tersembunyi. Bandingkan fitur setiap paket dan jadwalkan demo.",
 };
 
 export default function PricingPage() {

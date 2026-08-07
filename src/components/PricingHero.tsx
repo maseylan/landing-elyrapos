@@ -25,8 +25,8 @@ export default function PricingHero() {
           </div>
         </div>
       </div>
-      <div className="relative z-10 -mt-24 mx-auto max-w-5xl px-4 lg:px-6">
-        <div className="grid gap-6 md:grid-cols-3">
+      <div className="relative z-10 -mt-24 mx-auto max-w-4xl px-4 lg:px-6">
+        <div className="grid gap-6 md:grid-cols-2 max-w-2xl mx-auto">
           {PRICING_PLANS.map((plan) => (
             <PlanCard key={plan.name} plan={plan} />
           ))}
